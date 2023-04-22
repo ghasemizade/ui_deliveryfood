@@ -1,6 +1,6 @@
 # ui_deliveryfood
 
-### implemented ui delivery food site with grid
+### implemented ui delivery food website with grid
 
 * html5
 * css-grid
