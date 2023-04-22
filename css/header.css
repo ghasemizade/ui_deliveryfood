@@ -1,0 +1,90 @@
+.header{
+    background-color: #000;
+    grid-column: 1 / -1;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000), url(../assets/images/header.JPG);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    align-content: center;
+}
+.header1{
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+}
+.header2{
+    color: #fff;
+    font-size: 42px;
+}
+.header2 span{
+    color: orange;
+}
+.header-btn{
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(255, 166, 0, 0.76);
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.2s;
+    justify-self: center;
+
+}
+.header-btn:hover{
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+.indicator{
+    position:relative;
+    width:50px;
+    height:50px;
+    transform:rotate(45deg);
+}
+.span{
+    position:absolute;
+    box-sizing:border-box;
+    border:none;
+    border-bottom:3px solid #fff;
+    border-right:3px solid #fff;
+    animation:animate 1s linear infinite;
+}
+:nth-child(1){
+    top:-30px;
+    left:-30px;
+    animation-delay:0s;
+}
+:nth-child(2){
+    top:-15px;
+    left:-15px;
+    animation-delay:0.2s;
+}
+:nth-child(3){
+    top:0;
+    left:0;
+    animation-delay:0.4s;
+}
+:nth-child(4){
+    top:15px;
+    left:15px;
+    animation-delay:0.6s;
+}
+:nth-child(5){
+    top:30px;
+    left:30px;
+    animation-delay:0.8s;
+}
+@keyframes animate{
+    0%{
+      border-color:#fff;
+      transform:translate(0,0);
+    }
+     20%{
+      border-color:#fff;
+       transform:translate(15px,15px);
+    }
+     20.1%,100%{
+      border-color: orange;
+    }
+}
