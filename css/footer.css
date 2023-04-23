@@ -1,4 +1,28 @@
 .footer{
     grid-column: 1 / -1;
-    background-color: gray;
+    background-color: #bbb;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    text-align: center;
+}
+.category{
+    padding-top: 70px;
+    font-size: 28px;
+    color: rgb(206, 139, 16);
+}
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+}
+ul li a:hover{
+    color: red;
 }
