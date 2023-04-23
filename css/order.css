@@ -20,7 +20,8 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr .5fr repeat(3, .25fr) 1fr;
-    padding-top: 10px;
+    padding-top: 50px;
+    font-size: 24px;
 }
 .left{
     padding-top: 20px;
@@ -53,4 +54,20 @@
 }
 .left-title{
     font-size: 24px;
+}
+@media screen and (max-width: 675px) {
+    .left{
+        font-size: 12px;
+    }
+    .order-section{
+        padding: 10px 0px;
+    }
+}
+@media screen and (max-width: 630px) {
+    /* .order-section{
+        grid-template-columns: 15px repeat(4, 1fr) 50px;
+    } */
+    .leftbox-images{
+        display: none;
+    }
 }
