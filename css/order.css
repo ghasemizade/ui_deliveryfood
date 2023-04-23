@@ -23,6 +23,7 @@
     padding-top: 10px;
 }
 .left{
+    padding-top: 20px;
     background-color: #ffffff69;
     backdrop-filter: blur(4px);
     grid-column: 3 / 6;
@@ -43,4 +44,13 @@
 }
 .leftbox-img:hover{
     transform: translateY(-30px);
+}
+.left-title,
+.parantes,
+.order-branch{
+    color: rgb(189, 123, 1);
+    font-family: 'Satisfy', cursive;
+}
+.left-title{
+    font-size: 24px;
 }
