@@ -16,6 +16,7 @@
     transition: .2s;
 }
 .image:hover{
+    transform: skewY(5deg);
     box-shadow: rgba(0, 0, 0, 0.281) 0px 25px 50px -12px;
 }
 
