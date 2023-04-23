@@ -5,25 +5,36 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 280px);
+    grid-template-areas: "gallery_2 gallery_2 gallery_4" "gallery_3 gallery_1 gallery_4" "gallery_3 gallery_5 gallery_5";
+    padding: 20px 50px;
+    gap: 1rem;
 }
 
 .image-gallery{
     width: 100%;
-    height: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .gallery1{
-    background-image: url("../assets/images/test.JPG");
+    background-image: url("../assets/images/temp1.jpg");
+    grid-area: gallery_1;
 }
 .gallery2{
-    background-image: url("../assets/images/test2.JPG");
+    background-image: url("../assets/images/temp2.jpg");
+    grid-area: gallery_2;
 }
 .gallery3{
-    background-image: url("../assets/images/test3.JPG");
+    background-image: url("../assets/images/test2.JPG");
+    grid-area: gallery_3;
 }
 .gallery4{
-    background-image: url("../assets/images/story4.JPG");
+    background-image: url("../assets/images/test.JPG");
+    grid-area: gallery_4;
 }
 .gallery5{
-    background-image: url("../assets/images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg");
+    background-image: url("../assets/images/temp5.jpg");
+    grid-area: gallery_5;
 }
